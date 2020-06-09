@@ -41,4 +41,5 @@ swagger link is: http://localhost:8080/swagger-ui.html
 I have used 3 tables namely student, teacher and attendance their structure can be viewed in Entities defined in code
 username column for both student and teacher are unique
 passwords are stored after encryption so that No one can view passwords just by opening the database
+I also took care of duplicate attendance records by using a unique key called sugar id in attendance table which is encrypted form of date + studentId. Could have taken care of it by making date and student id collectively unique in attandance table
 
